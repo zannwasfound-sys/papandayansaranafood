@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Papandayan Sarana Food - Catering Food
+    </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body class="bg-gray-50 text-gray-900">
+    <!-- Header -->
+    <header class="bg-white shadow-lg sticky top-0 z-50">
+      <nav class="container mx-auto px-6 py-4">
+        <div class="flex items-center justify-between">
+          <div class="flex items-center">
+            <img
+              src="bahan/WhatsApp Image 2025-10-27 at 09.50.09_aa296214.jpg"
+              width="80px"
+              alt="Logo Chililin Farm - ilustrasi cabai merah segar dengan daun hijau"
+              class="mr-2"
+            />
+            <span class="text-2xl font-bold text-red-700">Papandayan Sarana Food</span>
+            <span class="text-sm text-gray-600 ml-2 hidden md:inline"
+              >Since 2025</span
+            >
+          </div>
+          <div class="hidden md:flex space-x-8">
+            <a
+              href="#home"
+              class="text-gray-700 hover:text-red-700 font-semibold transition duration-300"
+              >Beranda</a
+            >
+            <a
+              href="#keunggulan"
+              class="text-gray-700 hover:text-red-700 font-semibold transition duration-300"
+              >Tentang Kami</a
+            >
+            <a
+              href="#our-farm"
+              class="text-gray-700 hover:text-red-700 font-semibold transition duration-300"
+              >Layanan Katering</a
+            >
+            <a
+              href="#kontak"
+              class="text-gray-700 hover:text-red-700 font-semibold transition duration-300"
+              >Kontak</a
+            >
+          </div>
+          <div class="md:hidden">
+            <button
+              class="hamburger-menu focus:outline-none"
+              id="hamburger-button"
+            >
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobile-menu-overlay">
+      <span class="mobile-menu-close" id="mobile-menu-close">&times;</span>
+      <a href="#home" class="mobile-menu-item">Beranda</a>
+      <a href="#keunggulan" class="mobile-menu-item">Keunggulan</a>
+      <a href="#our-farm" class="mobile-menu-item">Our Farm</a>
+      <a href="#kontak" class="mobile-menu-item">Kontak</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section text-white">
+      <div class="container mx-auto px-6 py-16">
+        <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+          Rasakan Kenikmatan Premium Tanpa Repot Memasak <br class="hidden md:block" />
+        </h1>
+        <p class="text-lg md:text-xl mb-10 max-w-3xl mx-auto">
+          Mulai dari menu harian kantor hingga acara besar, kami menyediakan masakan hangat dengan cita rasa terbaik, diantar langsung ke lokasi Anda.
+        </p>
+        <a
+          href="https://wa.me/6281285750725?text=Halo%20Chililin%20Farm%2C%20saya%20ingin%20memesan%20cabai%20rawit."
+          target="_blank"
+          class="bg-red-700 hover:bg-red-800 text-white px-10 py-4 rounded-full font-bold inline-block transition duration-300 text-lg shadow-lg"
+          >Pesan via WhatsApp</a
+        >
+      </div>
+    </section>
+
+    <!-- Keunggulan -->
+    <section id="keunggulan" class="py-20 bg-white">
+      <div class="container mx-auto px-6">
+        <h2
+          class="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-16"
+        >
+          Kenapa Harus Memilih Catering Kami?
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+          <div
+            class="bg-gray-50 p-8 rounded-xl text-center shadow-md transition duration-300 hover:shadow-xl card-hover"
+          >
+            <div class="flex justify-center mb-6">
+              <img
+                src="bahan/IMG_0587-1024x683.jpg"
+                alt="Ilustrasi tanaman cabai segar dengan daun hijau lebat"
+                class="chili-icon"
+              />
+            </div>
+            <h3 class="text-2xl font-semibold mb-3 text-gray-800">
+              Solusi Praktis All-in-One
+            </h3>
+            <p class="text-gray-700 leading-relaxed">
+              Lupakan kerepotan memasak, mengemas, dan membersihkan. Kami mengurus semuanya! Anda fokus pada acara atau pekerjaan, kami sediakan hidangan lezat, lengkap, dan siap saji
+            </p>
+          </div>
+          <div
+            class="bg-gray-50 p-8 rounded-xl text-center shadow-md transition duration-300 hover:shadow-xl card-hover"
+          >
+            <div class="flex justify-center mb-6">
+              <img
+                src="bahan/673b042897a49.jpg"
+                alt="Ilustrasi sertifikat organik dengan daun hijau dan cap jaminan"
+                class="chili-icon"
+              />
+            </div>
+            <h3 class="text-2xl font-semibold mb-3 text-gray-800">
+              Pengiriman Tepat Waktu
+            </h3>
+            <p class="text-gray-700 leading-relaxed">
+              Kami menjamin katering Anda tiba tepat sesuai waktu yang disepakati. Hidangan dikemas khusus agar tetap hangat dan sempurna saat acara dimulai
+            </p>
+          </div>
+          <div
+            class="bg-gray-50 p-8 rounded-xl text-center shadow-md transition duration-300 hover:shadow-xl card-hover"
+          >
+            <div class="flex justify-center mb-6">
+              <img
+                src="bahan/5ee1e45950de7.jpg"
+                alt="Ilustrasi truk pengiriman dengan kotak-kotak cabai segar"
+                class="chili-icon"
+              />
+            </div>
+            <h3 class="text-2xl font-semibold mb-3 text-gray-800">
+              Alat Masak Yang Higienis
+            </h3>
+            <p class="text-gray-700 leading-relaxed">
+              Seluruh alat masak kami menggunakan Stainless Steel Food Grade yang anti-karat dan higienis sehingga menjamin masakan katering Anda bebas kontaminasi serta mempertahankan rasa murni yang lezat
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Farm Section -->
+    <section id="our-farm" class="py-20 bg-gray-100">
+      <div class="container mx-auto px-6">
+        <h2
+          class="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-16"
+        >
+          Layanan Katering
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <!-- Farm Image Card 1 -->
+          <div class="farm-image-card">
+            <img
+              src="bahan/nasi-box-premium.jpg"
+              alt="Pemandangan umum kebun cabai Chililin Farm"
+            />
+            <div class="text-content">
+              <h4>Katering Kotak Harian & Kantor (Lunch Box)</h4>
+              <p>
+                Layanan katering praktis untuk kebutuhan makan siang harian karyawan, meeting, atau acara seminar. Menu berganti setiap hari, menjamin makanan bergizi lengkap, lezat, dan diantar dalam kemasan higienis langsung ke lokasi kerja Anda.
+              </p>
+            </div>
+          </div>
+
+          <!-- Farm Image Card 2 -->
+          <div class="farm-image-card">
+            <img
+              src="bahan/Rekomendasi-Catering-Prasmanan-di-Jogja.jpg"
+              alt="Petani sedang memanen cabai dengan hati-hati"
+            />
+            <div class="text-content">
+              <h4>Katering Prasmanan (Acara Besar)</h4>
+              <p>
+                Solusi hidangan lengkap untuk pesta pernikahan, gathering, ulang tahun, atau acara korporat. Kami menyediakan peralatan, service, dan variasi menu yang dapat disesuaikan untuk melayani puluhan hingga ratusan tamu Anda dengan elegan.
+              </p>
+            </div>
+          </div>
+
+          <!-- Farm Image Card 3 -->
+          <div class="farm-image-card">
+            <img
+              src="bahan/diet.jpg"
+              alt="Sistem irigasi modern di Chililin Farm"
+            />
+            <div class="text-content">
+              <h4>Katering Diet & Sehat</h4>
+              <p>
+                Sehat	Khusus bagi Anda yang menjalani pola hidup sehat atau program diet. Menu dihitung cermat kalori dan nutrisinya, dibuat dari bahan organik, rendah garam/gula, dan dikirim sesuai jadwal makan ketat Anda.
+              </p>
+            </div>
+          </div>
+
+          <!-- Farm Image Card 4 -->
+          <div class="farm-image-card">
+            <img
+              src="bahan/images.jpg"
+              alt="Cabai yang baru dipanen siap untuk dikemas"
+            />
+            <div class="text-content">
+              <h4>Nasi Tumpeng & Jajan Pasar</h4>
+              <p>
+                Layanan khusus untuk acara adat, syukuran, atau perayaan. Kami menyediakan tumpeng berhias cantik dengan aneka lauk pauk tradisional, serta berbagai pilihan kue dan snack untuk melengkapi jamuan ringan Anda.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Kontak & Pemesanan -->
+    <section id="kontak" class="py-20 bg-gray-50">
+      <div class="container mx-auto px-6">
+        <h2
+          class="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-16"
+        >
+          Hubungi Kami & Pesan Sekarang
+        </h2>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          <div class="bg-white p-8 md:p-10 rounded-xl shadow-md">
+            <h3 class="text-2xl font-bold text-gray-900 mb-8">
+              Pemesanan Via Form
+            </h3>
+            <form action="https://formspree.io/f/xqalpjrz" method="POST">
+              <div class="mb-6">
+                <label class="block text-gray-700 font-medium mb-2" for="nama"
+                  >Nama Pemesan</label
+                >
+                <input
+                  type="text"
+                  id="nama"
+                  name="nama"
+                  class="w-full px-5 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-700 transition duration-200"
+                  required
+                />
+              </div>
+              <div class="mb-6">
+                <label class="block text-gray-700 font-medium mb-2" for="email"
+                  >Email</label
+                >
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="w-full px-5 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-700 transition duration-200"
+                  required
+                />
+              </div>
+              <div class="mb-6">
+                <label
+                  class="block text-gray-700 font-medium mb-2"
+                  for="telepon"
+                  >Nomor Telepon</label
+                >
+                <input
+                  type="tel"
+                  id="telepon"
+                  name="telepon"
+                  class="w-full px-5 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-700 transition duration-200"
+                  required
+                />
+              </div>
+              <div class="mb-6">
+                <label class="block text-gray-700 font-medium mb-2" for="jumlah"
+                  >Jumlah Pemesanan (Minimal 50 Box)</label
+                >
+                <input
+                  type="number"
+                  id="jumlah"
+                  name="jumlah"
+                  min="50"
+                  class="w-full px-5 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-700 transition duration-200"
+                  required
+                />
+              </div>
+              <div class="mb-8">
+                <label class="block text-gray-700 font-medium mb-2" for="alamat"
+                  >Alamat Pengiriman</label
+                >
+                <textarea
+                  id="alamat"
+                  name="alamat"
+                  rows="4"
+                  class="w-full px-5 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-700 transition duration-200"
+                  required
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                class="w-full bg-red-700 hover:bg-red-800 text-white py-4 rounded-lg font-bold text-lg transition duration-300 shadow-md"
+              >
+                Kirim Pesanan
+              </button>
+            </form>
+          </div>
+
+          <div class="bg-white p-8 md:p-10 rounded-xl shadow-md">
+            <h3 class="text-2xl font-bold text-gray-900 mb-8">
+              Informasi Kontak
+            </h3>
+            <div class="mb-6">
+              <h4 class="font-semibold text-gray-800 mb-2 text-lg">
+                Alamat:
+              </h4>
+              <p class="text-gray-700 leading-relaxed">
+                Utama, Kec. Cimahi Sel., Kota Cimahi, Jawa Barat 40533
+              </p>
+            </div>
+            <div class="mb-6">
+              <h4 class="font-semibold text-gray-800 mb-2 text-lg">
+                Jam Operasional:
+              </h4>
+              <p class="text-gray-700">Senin - Sabtu: 08.00 - 17.00 WIB</p>
+            </div>
+            <div class="mb-6">
+              <h4 class="font-semibold text-gray-800 mb-2 text-lg">
+                Kontak Langsung:
+              </h4>
+              <p class="text-gray-700">Telepon: +62 812 8575 0725</p>
+              <p class="text-700">
+                WhatsApp:
+                <a
+                  href="https://wa.me/6281285750725"
+                  target="_blank"
+                  class="text-red-700 hover:underline"
+                  >+62 812 8575 0725</a
+                >
+              </p>
+              <p class="text-gray-700">
+                Email:
+                <a
+                  href="mailto:info@chililinfarm.com"
+                  class="text-red-700 hover:underline"
+                  >papandayansaranafood@gmail.com</a
+                >
+              </p>
+            </div>
+            <div class="mb-8">
+              <h4 class="font-semibold text-gray-800 mb-3 text-lg">
+                Ikuti Kami:
+              </h4>
+              <div class="flex space-x-5">
+                <a
+                  href="https://www.instagram.com/chililinfarm/"
+                  target="_blank"
+                  class="text-red-700 hover:text-red-800 transition duration-300"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="36"
+                    height="36"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="feather feather-instagram"
+                  >
+                    <rect
+                      x="2"
+                      y="2"
+                      width="20"
+                      height="20"
+                      rx="5"
+                      ry="5"
+                    ></rect>
+                    <path
+                      d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"
+                    ></path>
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                  </svg>
+                </a>
+                <!-- Anda bisa menambahkan ikon media sosial lain jika diperlukan -->
+              </div>
+            </div>
+
+            <h4 class="font-semibold text-gray-800 mb-3 text-lg">
+              Lokasi Kami (Google Maps):
+            </h4>
+            <div
+              class="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden shadow-md"
+            >
+              <!-- Ganti YOUR_GOOGLE_MAPS_EMBED_CODE dengan kode embed dari Google Maps -->
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1513.4482360889172!2d107.5331823773354!3d-6.911137170613663!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e5b993fd560b%3A0x9148576ceae04cd6!2sPerumahan%20EBOD%20JAYA!5e0!3m2!1sid!2sid!4v1761697451747!5m2!1sid!2sid"
+                width="100%"
+                height="300"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-10">
+      <div class="container mx-auto px-6">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+          <div>
+            <h3 class="text-2xl font-bold mb-4 text-red-700">Papandayan Sarana Food</h3>
+            <p class="text-gray-400 leading-relaxed">
+              Menyediakan cabai segar berkualitas tinggi langsung dari kebun
+              kami untuk memenuhi kebutuhan dapur rumah dan bisnis kuliner Anda.
+              Kualitas dan kesegaran adalah prioritas kami.
+            </p>
+          </div>
+          <div>
+            <h3 class="text-xl font-bold mb-4">Tautan Cepat</h3>
+            <ul class="space-y-3">
+              <li>
+                <a
+                  href="#home"
+                  class="text-gray-400 hover:text-white transition duration-300"
+                  >Beranda</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#keunggulan"
+                  class="text-gray-400 hover:text-white transition duration-300"
+                  >Tentang Kami</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#our-farm"
+                  class="text-gray-400 hover:text-white transition duration-300"
+                  >Layanan Katering</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#kontak"
+                  class="text-gray-400 hover:text-white transition duration-300"
+                  >Kontak</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/chililinfarm/"
+                  target="_blank"
+                  class="text-gray-400 hover:text-white transition duration-300"
+                  >Instagram Kami</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-xl font-bold mb-4">Newsletter</h3>
+            <p class="text-gray-400 mb-5 leading-relaxed">
+              Dapatkan info promo terbaru dan tips penggunaan cabai segar
+              langsung ke email Anda:
+            </p>
+              <form action="https://formspree.io/f/xqalpjrz" method="POST"
+>
+  <label class="warna">
+    <input type="email" name="email">
+  </label>
+  <!-- your other form fields go here -->
+  <button type="submit">Send</button>
+</form>
+            </form>
+          </div>
+        </div>
+        <div
+          class="border-t border-gray-700 mt-10 pt-8 text-center text-gray-500 text-sm"
+        >
+          <p>&copy; 2025 Papandayan Sarana Food Indonesia. Semua hak dilindungi.</p>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
